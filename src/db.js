@@ -56,7 +56,7 @@ const posts = [
         id: "1",
         title: "My Post",
         body: "My post message",
-        published: false,
+        published: true,
         author: users[0].id,
         comments: [comments[0].id, comments[3].id]
     },
@@ -78,9 +78,13 @@ const posts = [
     },
 ]
 
-
-module.exports = {
+const db = {
     users,
     posts,
     comments
+}
+
+
+module.exports = {
+    db
 }
